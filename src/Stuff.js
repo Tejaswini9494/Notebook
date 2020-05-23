@@ -5,14 +5,13 @@ class Stuff extends Component {
     return (
       <div>
         <h2>STUFF</h2>
-        <p>Mauris sem velit, vehicula eget sodales vitae,
-        rhoncus eget sapien:</p>
+        <p>React here</p>
         <ol>
-          <li>Nulla pulvinar diam</li>
-          <li>Facilisis bibendum</li>
-          <li>Vestibulum vulputate</li>
-          <li>Eget erat</li>
-          <li>Id porttitor</li>
+          <li>1.</li>
+          <li>2.</li>
+          <li>3.</li>
+          <li>4.</li>
+          <li>5.</li>
         </ol>
       </div>
     );

@@ -12,17 +12,22 @@ import {
 class Main extends Component {
   render() {
     return (
+      <HashRouter>
         <div>
-          <h1>Simple SPA</h1>
+          <h1>Notebook</h1>
           <ul className="header">
-            <li><a href="/">Data Structures</a></li>
-            <li><a href="/stuff">React</a></li>
-            <li><a href="/contact">Node.js</a></li>
+            <li><NavLink exact to="/">Data Structures</NavLink></li>
+            <li><NavLink to="/stuff">React</NavLink></li>
+            <li><NavLink to="/contact">Node.js</NavLink></li>
           </ul>
           <div className="content">
+            <Route exact path="/" component={Home}/>
+            <Route path="/stuff" component={Stuff}/>
+            <Route path="/contact" component={Contact}/>
              
           </div>
         </div>
+        </HashRouter>
     );
   }
 }
